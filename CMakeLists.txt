@@ -4,13 +4,16 @@ set (CMAKE_CXX_STANDARD 14)
 project(npsipsdk)
 
 set (CMAKE_INCLUDE_CURRENT_DIR ON)
+set (CMAKE_FLAGS  "${CMAKE_FLAGS} -std=c++0x")
+set (CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -std=c++0x")
 
 set(XML_SRC_DIR "${PROJECT_SOURCE_DIR}/tinyxml2")
 include_directories(${XML_SRC_DIR})
 
 set(SDK_SRC_DIR ./source)
 set(MESSAGE_SRC_DIR ./Message)
-include_directories(./header )
+include_directories(~/work/resip/usr/local/include/)
+include_directories(./header)
 
 
 

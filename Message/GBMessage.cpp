@@ -1,6 +1,6 @@
 #include "GBMessage.hpp"
 //#include "ILocker.h"
-#include <atomic>
+#include <cstdatomic>
 static std::atomic<unsigned int>  g_msgsn(0);
 //static CLocker      g_msg_lock;
 

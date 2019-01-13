@@ -38,7 +38,7 @@ bool NPReproAuthManager::proxyAuthenticationMode() const
 	return false;
 }
 
-ServerAuthManager::AsyncBool NPReproAuthManager::requiresChallenge(const resip::SipMessage& msg)
+resip::AsyncBool NPReproAuthManager::requiresChallenge(const resip::SipMessage& msg)
 {
 	const resip::Uri &uri = msg.header(h_From).uri();
 	std::string user = uri.user().c_str();
